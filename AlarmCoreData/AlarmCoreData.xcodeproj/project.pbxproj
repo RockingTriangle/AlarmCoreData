@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1383DF5C263B4FEB00084BBC /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383DF5B263B4FEB00084BBC /* DateHelper.swift */; };
+		1383DF5E263B513000084BBC /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383DF5D263B513000084BBC /* AlarmListTableViewController.swift */; };
+		1383DF62263B51F500084BBC /* AlarmDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383DF61263B51F500084BBC /* AlarmDetailTableViewController.swift */; };
+		1383DF64263B672B00084BBC /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383DF63263B672B00084BBC /* AlarmScheduler.swift */; };
+		1385BF22263B483000C8F0D5 /* Alarm+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BF21263B483000C8F0D5 /* Alarm+Convenience.swift */; };
+		1385BF24263B485000C8F0D5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BF23263B485000C8F0D5 /* CoreDataStack.swift */; };
+		1385BF29263B4A0600C8F0D5 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BF28263B4A0600C8F0D5 /* AlarmController.swift */; };
+		1385BF2D263B4E5900C8F0D5 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385BF2C263B4E5900C8F0D5 /* AlarmTableViewCell.swift */; };
 		FBF66FDA25B755D40038F7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66FD925B755D40038F7AC /* AppDelegate.swift */; };
 		FBF66FDC25B755D40038F7AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66FDB25B755D40038F7AC /* SceneDelegate.swift */; };
 		FBF66FE125B755D40038F7AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF66FDF25B755D40038F7AC /* Main.storyboard */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1383DF5B263B4FEB00084BBC /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		1383DF5D263B513000084BBC /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
+		1383DF61263B51F500084BBC /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
+		1383DF63263B672B00084BBC /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
+		1385BF21263B483000C8F0D5 /* Alarm+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alarm+Convenience.swift"; sourceTree = "<group>"; };
+		1385BF23263B485000C8F0D5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1385BF28263B4A0600C8F0D5 /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
+		1385BF2C263B4E5900C8F0D5 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 		FBF66FD625B755D40038F7AC /* AlarmCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF66FD925B755D40038F7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF66FDB25B755D40038F7AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +53,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1383DF5A263B4FCE00084BBC /* Helpers and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1383DF5B263B4FEB00084BBC /* DateHelper.swift */,
+			);
+			path = "Helpers and Extensions";
+			sourceTree = "<group>";
+		};
+		1385BF25263B49E200C8F0D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1385BF26263B49EA00C8F0D5 /* ModelControllers */,
+				1385BF27263B49F100C8F0D5 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1385BF26263B49EA00C8F0D5 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1385BF28263B4A0600C8F0D5 /* AlarmController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		1385BF27263B49F100C8F0D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1383DF5D263B513000084BBC /* AlarmListTableViewController.swift */,
+				1383DF61263B51F500084BBC /* AlarmDetailTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1385BF2A263B4E2800C8F0D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1385BF2B263B4E3100C8F0D5 /* Custom Views */,
+				FBF66FF425B7562C0038F7AC /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1385BF2B263B4E3100C8F0D5 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				1385BF2C263B4E5900C8F0D5 /* AlarmTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		FBF66FCD25B755D40038F7AC = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +123,11 @@
 		FBF66FD825B755D40038F7AC /* AlarmCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				1383DF5A263B4FCE00084BBC /* Helpers and Extensions */,
 				FBF66FF525B756350038F7AC /* Model */,
+				1385BF25263B49E200C8F0D5 /* Controllers */,
+				1385BF2A263B4E2800C8F0D5 /* Views */,
 				FBF66FF225B7561B0038F7AC /* Supporting Files */,
-				FBF66FF425B7562C0038F7AC /* Storyboards */,
 			);
 			path = AlarmCoreData;
 			sourceTree = "<group>";
@@ -66,10 +135,12 @@
 		FBF66FF225B7561B0038F7AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FBF66FE725B755D60038F7AC /* LaunchScreen.storyboard */,
 				FBF66FD925B755D40038F7AC /* AppDelegate.swift */,
 				FBF66FDB25B755D40038F7AC /* SceneDelegate.swift */,
 				FBF66FE525B755D60038F7AC /* Assets.xcassets */,
 				FBF66FEA25B755D60038F7AC /* Info.plist */,
+				1383DF63263B672B00084BBC /* AlarmScheduler.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -78,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				FBF66FDF25B755D40038F7AC /* Main.storyboard */,
-				FBF66FE725B755D60038F7AC /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -87,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				FBF66FE225B755D40038F7AC /* AlarmCoreData.xcdatamodeld */,
+				1385BF21263B483000C8F0D5 /* Alarm+Convenience.swift */,
+				1385BF23263B485000C8F0D5 /* CoreDataStack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,9 +233,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1385BF24263B485000C8F0D5 /* CoreDataStack.swift in Sources */,
 				FBF66FDA25B755D40038F7AC /* AppDelegate.swift in Sources */,
 				FBF66FE425B755D40038F7AC /* AlarmCoreData.xcdatamodeld in Sources */,
 				FBF66FDC25B755D40038F7AC /* SceneDelegate.swift in Sources */,
+				1385BF22263B483000C8F0D5 /* Alarm+Convenience.swift in Sources */,
+				1383DF64263B672B00084BBC /* AlarmScheduler.swift in Sources */,
+				1383DF5C263B4FEB00084BBC /* DateHelper.swift in Sources */,
+				1385BF2D263B4E5900C8F0D5 /* AlarmTableViewCell.swift in Sources */,
+				1383DF5E263B513000084BBC /* AlarmListTableViewController.swift in Sources */,
+				1383DF62263B51F500084BBC /* AlarmDetailTableViewController.swift in Sources */,
+				1385BF29263B4A0600C8F0D5 /* AlarmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = 3YUN5S2WTZ;
 				INFOPLIST_FILE = "AlarmCoreData/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = 3YUN5S2WTZ;
 				INFOPLIST_FILE = "AlarmCoreData/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
